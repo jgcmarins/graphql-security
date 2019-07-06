@@ -13,7 +13,7 @@ import { LimitIntrospection } from './LimitIntrospection';
 import { WhiteList } from './WhiteList';
 import { PersistedQueries } from './PersistedQueries';
 import { Other } from './Other';
-
+import { References } from './References';
 import { Thanks } from './Thanks'
 
 export { default as theme } from './theme'
@@ -121,6 +121,78 @@ export { default as theme } from './theme'
 ---
 
 <Other />
+
+---
+
+<div style={{fontSize: 28}}>
+<CodeSurfer
+  title="Middleware"
+  code={require('!raw-loader!./middleware.txt')}
+  showNumbers={false}
+  dark={true}
+  lang="bash"
+  steps={[
+    { range: [1, 1], notes: 'https://github.com/alekbarszczewski/graphql-add-middleware'},
+  ]}
+/>
+</div>
+
+---
+
+<div style={{fontSize: 26}}>
+<CodeSurfer
+  title="Middleware - applyMiddlewares.ts"
+  code={require('!raw-loader!./applyMiddlewares.ts')}
+  showNumbers={false}
+  dark={true}
+  lang="typescript"
+  steps={[
+    { range: [1, 9] },
+  ]}
+/>
+</div>
+
+---
+
+<div style={{fontSize: 26}}>
+<CodeSurfer
+  title="Middleware - requiredRolesMutation.ts"
+  code={require('!raw-loader!./requiredRolesMutation.ts')}
+  showNumbers={false}
+  dark={true}
+  lang="typescript"
+  steps={[
+    { range: [1, 6], notes: 'Imports' },
+    { range: [7, 13], notes: 'function Signature' },
+    { range: [14, 24], notes: 'Check if middleware is present' },
+    { range: [26, 30], notes: 'Validate middleware' },
+    { range: [32, 39], notes: 'Return errors' },
+  ]}
+/>
+</div>
+
+---
+
+<div style={{fontSize: 26}}>
+<CodeSurfer
+  title="Middleware - GiveGodModeMutation.ts"
+  code={require('!raw-loader!./GiveGodModeMutation.ts')}
+  showNumbers={false}
+  dark={true}
+  lang="typescript"
+  steps={[
+    { range: [1, 7], notes: 'Imports' },
+    { range: [9, 15], notes: 'function, name, inputFields' },
+    { range: [16, 31], notes: 'mutateAndGetPayload' },
+    { range: [32, 41], notes: 'outputFields' },
+    { range: [44, 47], notes: 'export default' },
+  ]}
+/>
+</div>
+
+---
+
+<References />
 
 ---
 
