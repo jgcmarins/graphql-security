@@ -1,0 +1,127 @@
+import { Head, Image } from 'mdx-deck'
+import Code from 'mdx-code';
+import { CodeSurfer } from "mdx-deck-code-surfer";
+
+import { Cover } from './Cover';
+import { Intro } from './Intro';
+import { Tweet } from './Tweet';
+import { Attacks } from './Attacks';
+import { LimitQuery } from './LimitQuery';
+import { DisableIntrospection } from './DisableIntrospection';
+import { Authorization } from './Authorization';
+import { LimitIntrospection } from './LimitIntrospection';
+import { WhiteList } from './WhiteList';
+import { PersistedQueries } from './PersistedQueries';
+import { Other } from './Other';
+
+import { Thanks } from './Thanks'
+
+export { default as theme } from './theme'
+
+<Head>
+  <title>GraphQL Security</title>
+</Head>
+
+<Cover />
+
+---
+
+<Intro />
+
+---
+<div style={{ fontSize: 28 }}>
+<CodeSurfer
+  title="Road Map"
+  code={require('!raw-loader!./topics.txt')}
+  showNumbers={false}
+  dark={true}
+  lang="txt"
+  steps={[
+    { range: [1, 1] },
+    { range: [2, 2] },
+    { range: [3, 3] },
+    { range: [4, 4] },
+    { range: [5, 5] },
+    { range: [6, 6] },
+    { range: [7, 7] },
+    { range: [8, 8] },
+    { range: [9, 9] },
+    { range: [10, 10] },
+  ]}
+/>
+</div>
+
+---
+<div style={{fontSize: 28}}>
+<CodeSurfer
+  title="Overview"
+  code={require('!raw-loader!./overview.txt')}
+  showNumbers={false}
+  dark={true}
+  lang="bash"
+  steps={[
+    { range: [1, 1], notes: 'Fetches data'},
+    { range: [3, 3], notes: 'Mutates data'},
+    { range: [5, 5], notes: 'Updates when a mutation happens'},
+  ]}
+/>
+</div>
+
+---
+
+<Tweet />
+
+---
+<div style={{fontSize: 26}}>
+<CodeSurfer
+  title="Overview - app.ts"
+  code={require('!raw-loader!./app.ts')}
+  showNumbers={false}
+  dark={true}
+  lang="typescript"
+  steps={[
+    { range: [1, 16], notes: 'Koa imports'},
+    { range: [18, 37], notes: 'App setup'},
+    { range: [39, 46], notes: 'Expose Playground'},
+    { range: [48, 62], notes: 'Setup Koa + GraphQL Context'},
+    { range: [64, 82], notes: '/graphql'},
+    { range: [90, 112], notes: 'Error handling'},
+  ]}
+/>
+</div>
+
+---
+
+<Attacks />
+
+---
+
+<LimitQuery />
+
+---
+
+<DisableIntrospection />
+
+---
+
+<Authorization />
+
+---
+
+<LimitIntrospection />
+
+---
+
+<WhiteList />
+
+---
+
+<PersistedQueries />
+
+---
+
+<Other />
+
+---
+
+<Thanks />
