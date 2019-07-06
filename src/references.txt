@@ -1,0 +1,6 @@
+https://www.freecodecamp.org/news/rest-apis-are-rest-in-peace-apis-long-live-graphql-d412e559d8e4/#fb0c
+https://github.com/Goblinlordx/authograph
+https://bitbucket.org/baldiviab/authed-graphql/src/7be7708ab996c312e02a9e82ae66aea1ab42a735/auth/authograph.js?at=master&fileviewer=file-view-default
+https://github.com/graphql/graphql-js/tree/fd97652d3e901b0d03b2429bd28e3cd59f402f7a/src/validation/rules
+https://github.com/JCMais/graphql-yup-middleware
+https://itnext.io/graphql-mutation-arguments-validation-with-yup-using-graphql-middleware-645822fb748
