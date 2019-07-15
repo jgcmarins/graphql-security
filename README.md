@@ -1,6 +1,8 @@
 # graphql-security
 My presentation about GraphQL Security
 
+## Slides: https://jgcmarins.github.io/graphql-security/
+
 ## Topics
 - Overview: Query, Mutation, Subscription
 - What kinds of attacks?
